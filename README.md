@@ -7,6 +7,7 @@ A task manager app built using React to help us organize and manage our daily ta
 ### Features
 - Mark tasks as completed with a fun rocket animation.
 - Tasks are saved in local storage, so you can revisit and view old tasks.
+- Displays the current date and time for better task management.
 - Responsive design for mobile and desktop views.
 
 ### Built Using
@@ -15,8 +16,8 @@ A task manager app built using React to help us organize and manage our daily ta
 [![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
 ![Vite](https://img.shields.io/badge/Vite-643EED.svg?style=for-the-badge&logo=vite&logoColor=white)
 
-### Website Preview
-
+### Project Demo
+![Image](https://github.com/user-attachments/assets/46a34fde-87ef-42c4-91d1-4e4c3b2836e9)
 
 ### Run the Project Locally
 1. Clone the repository:
