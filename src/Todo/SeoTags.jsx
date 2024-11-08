@@ -5,7 +5,7 @@ function SeoTags() {
     <div>
       {/* SEO Meta Tags */}
       <Helmet>
-        <title>Rocketo-Do - Task Manager</title>
+        <title>Rocketo-do | Launch your tasks</title>
         <meta name="description" content="Rocketo-Do is a task manager app built with React" />
         <meta name="author" content="Kishore S R" />
         <meta name="keywords" content="task manager, to-do list, React, Kishore S R, productivity" />
