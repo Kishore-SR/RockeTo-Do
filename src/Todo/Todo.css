@@ -1,0 +1,106 @@
+/* container styling */
+.todo-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fdfdfd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+/* Header styling */
+.todo-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.todo-title {
+  font-size: 35px;
+  font-weight: bold;
+  background: linear-gradient(90deg, #03c3ee, #006bf6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+/* List section styling*/
+.todo-list-section {
+  margin-top: 10px;
+}
+.todo-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Button styling */
+.clear-all-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+.clear-all-button:hover {
+  background-color: #e04343;
+}
+@media (max-width: 768px) {
+  .todo-container {
+    padding: 15px;
+  }
+
+  .todo-title {
+    font-size: 22px;
+  }
+
+  .clear-all-button {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
+
+/* Styling for the date-time display */
+.date-time-display {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333;
+  text-align: center;
+  font-size: 16px;
+  margin: 10px 0;
+  background-color: #f1f1f1;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.date-time-display {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.clock-icon {
+  color: #666;
+}
+.todo-title {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  width: 40px;
+  margin-right: 10px;
+  border-radius: 25%;
+}
+@media (max-width: 768px) {
+  .date-time-display {
+    font-size: 10px;
+    padding: 8px;
+  }
+  .logo {
+    width: 34px;
+    margin-right: 4px;
+  }
+}

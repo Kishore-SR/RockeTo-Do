@@ -1,0 +1,118 @@
+/* Styling for the todo list item */
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 8px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s;
+}
+.task {
+  margin-left: 24px;
+  font-size: 18px;
+}
+/* Highlight completed tasks */
+.task-done {
+  background-color: #e6f9e6;
+}
+.checked {
+  text-decoration: line-through;
+  color: #888;
+}
+.notChecked {
+  color: #333;
+}
+.todo-actions {
+  display: flex;
+  gap: 10px;
+}
+
+/* Button styling */
+.todo-btn {
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 5px;
+  font-size: 1.1rem;
+  color: #5c5c5c;
+  transition: background-color 0.3s, color 0.3s;
+  margin-right: 30px;
+}
+.todo-btn:hover {
+  background-color: #e0e0e0;
+  color: #007bff;
+}
+.done-btn {
+  color: #2ecc71;
+}
+
+.done-btn:hover {
+  background-color: #d1f2d1;
+}
+
+/* Delete button styling */
+.delete-btn {
+  color: #e74c3c;
+}
+.delete-btn:hover {
+  background-color: #f8d7da;
+}
+
+/* --- Rocket Animation --- */
+.todo-item {
+  position: relative;
+  }
+  .rocket-launch {
+  position: fixed;
+  bottom: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 250px;
+  animation: rocketLaunch 2s ease-in forwards;
+  z-index: 4;
+  }
+  
+  @keyframes rocketLaunch {
+  0% {
+  bottom: -100px;
+  opacity: 0;
+  transform: scale(0.5) translateX(-50%);
+  }
+  50% {
+  opacity: 1;
+  transform: scale(1) translateX(-50%);
+  }
+  100% {
+  bottom: 100vh;
+  opacity: 0;
+  transform: scale(1.2) translateX(-50%);
+  }
+  }
+ 
+@media (max-width: 768px) {
+  .todo-item {
+    flex-direction: row;
+    align-items: center;
+  }
+  .todo-actions {
+    margin-top: 5px;
+    width: 30%;
+    justify-content: flex-end;
+  }
+  .task {
+    margin-left: 10px;
+    font-size: 18px;
+  }
+  .todo-btn {
+    margin-right: 10px;
+  }
+  .rocket-launch {
+    width: 180px;
+    }
+}
+
